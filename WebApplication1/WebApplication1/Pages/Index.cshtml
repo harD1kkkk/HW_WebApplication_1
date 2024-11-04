@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@* @{
+    ViewData["Title"] = "Weather App";
+}
+
+<h2>Weather App</h2> *@
+
+@* @{
+    ViewData["Title"] = "Date App";
+}
+
+<h2>Weather App</h2> *@
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+@* @if (Model.Weather != null)
+{
+    <p><strong>Current Weather: @Model.Weather</strong></p>
+}
+<form method="post">
+    <button type="submit">Get current weather</button>
+</form> *@
+
+<p><strong>Current Weather: @Model.now</strong></p>
+<form method="post">
+    <button type="submit">Get current Date</button>
+</form> 
+

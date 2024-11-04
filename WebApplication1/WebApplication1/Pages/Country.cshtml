@@ -1,0 +1,22 @@
+﻿@page
+@model WebApplication1.Pages.CountryModel
+@{
+    ViewData["Title"] = "Countries";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <button type="submit">Get Countries</button>
+</form>
+
+@if (Model.Countries.Count > 0)
+{
+    <h3>Country List:</h3>
+    <ul>
+        @foreach (var country in Model.Countries)
+        {
+            <li>@country.Name, Capital: @country.Capital, Population: @country.Population</li>
+        }
+    </ul>
+}
